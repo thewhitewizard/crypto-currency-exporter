@@ -1,0 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Go crypto-currency-exporter",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.21-bullseye",
+
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,readonly"
+	],
+
+	"settings": {
+		"workbench.colorCustomizations": {
+		  "statusBar.background": "#ff4088",
+		  "statusBar.foreground": "#ffffff"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	}
+
+}
